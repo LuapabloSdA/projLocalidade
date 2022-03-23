@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /*Titulo da Página, cor, tudo*/
+            #pag_cima{
+                display: flex;
+                width: 100%;
+                min-width: 30%;
+                height: 100px;
+                min-height: 30%;
+                background-color: red;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                margin: 5px;
+            }
+            #dentro_cima{
+                display: flex;
+                width: 53%;
+                min-width: 30%;
+                height: 50px;
+                min-height: 30%;
+                background-color: red;
+                align-items: center;
+                margin: 90px;
+                justify-content: space-between;
+            }
+            #pag_menu{
+                height: 15%;
+                min-height: 15px;
+                width: 15%;
+                min-width: 15px;
+                background-color: green;
+                text-align: center;
+                float:left;
+                align-items: center;
+                margin: 5px;
+                padding: 5px;
+            }
+            #pag_meio{
+                height: 50%;
+                min-height: 30px;
+                width: 70%;
+                min-width: 50px;
+                float: left;
+                text-align: center;
+                margin: 5px;
+                padding: 5px;
+            }
+            #traco{
+                text-decoration: underline;
+                color: rgb(255, 255, 255);
+            }
+            #div{
+                max-width: 320px;
+                max-height: 800px;
+                margin: auto;
+                position: fixed;
+            }
+            #traco2{
+                text-decoration: underline;
+            }
+            #pag_menu a{
+                text-decoration: none;
+                display: block;
+                padding: 10px 14px;
+                color: yellow;
+            }
+            #pag_menu a:hover{
+                transition: 0,5s;
+                background-color: rgba(11, 179, 6, 0.829);
+                color:rgb(255, 0, 0);
+            }
+            button{
+                display: block;
+                border: none;
+                border-radius: 5px;
+                color: yellow;
+                background: rgb(251,7,7);
+                background: linear-gradient(90deg, rgba(251,7,7,1) 1%, rgba(0,194,255,1) 100%);
+                cursor: pointer;
+            }
+            button:hover{
+                opacity: 0.8;
+            }
+            button:active{
+                opacity: 0.6;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Titulo da página-->
+        <title>Localização</title>
+        <div id="pag_cima">
+            <div id="dentro_cima">
+                <img src="https://user-images.githubusercontent.com/98188181/152560019-7bcf0a8d-c130-493c-888f-2afe2c1331e1.png" width="60px" height="60px">
+                <h1 id="traco">Localizada</h1>
+            </div>
+        </div>
+        <!--Menu da Página-->
+        
+        <div id="pag_menu">
+            <p id="traco">Menu</p>
+            <p><a href="https://luapablosda.github.io/projInicial/">Inicial</a><p></p>
+            <p><a href="https://luapablosda.github.io/projHistoria/">Historia</a></p>
+            <p><a href="https://luapablosda.github.io/projArtesanato/">Artesanato</a></p>
+            <p><a href="https://luapablosda.github.io/projTurismo/">Turismo</a></p>
+            <p><a href="https://luapablosda.github.io/projEscolas/">Escolas</a></p>
+            <a href="https://luapablosda.github.io/projFormContato/"><button>Reportar...</button></a>
+                
+                
+        </div>
+        <!--Página Central-->
+        <div id="pag_meio">
+            <div id="dentro_meio">
+                <h3 id="traco2"></h3>
+                <p>O Estado de Alagoas está divido em três mesorreigiões: sertão, o agreste e
+                    leste alagoanos. Cada mesorregião está subdividida em micror-regiões.
+                    A cidade de Mar Vermelho pertence à microrregião de Palmeira dos  Índios,
+                    que está na mesorregião do agreste alagoano. Mar Vermelho se destaca,
+                    dentre as damais cidades que compõem o agreste alagoano, pela altitude 
+                    e pelo clima. A cidade está cerca de 600m acima do nível do mar, 
+                    e o clima é um dos mais frios do Estado.<br> O mapa que segue permite 
+                    visualizar onde Mar Vermelho está localizado.
+                </p>
+                <img src="https://user-images.githubusercontent.com/98188181/159796482-7360cb3b-850b-4417-ae25-031c31346111.png" height="300px" width="550" >
+                <h4>Limites geográficos:</h4>
+                <p>Ao norte: Paulo Jacinto e Viçosa</p>
+                <p>Ao sul: Tanque d'Arca e Maribondo</p>
+                <p>Ao leste: Pindoba</p>
+                <p>A oeste: Palmeira dos Índios</p>
+                <!--Distacia de Mar Vermelho-->
+                <h4>Distância de Mar Vermelho em relação às cidades vizinhas:</h4>
+                <p>Paulo Jacinto-- 11 km <br>
+                    Tanque d'Arca-- 18 km <br>
+                    Pindoba-- 24 km <br>
+                    Viçosa-- 16 km <br>
+                    P. dos Índios-- 38 km</p>
+                <p>Em relação à capital do Estado(Maceió), 
+                    Mar Vermelho fica a 110 km via Viçosa e a 188 km via Tanque d'Arca.</p>
+            </div>
+        </div>
+    </body>
+</html>
